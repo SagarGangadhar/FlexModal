@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Modal</title>
+    <style type="text/css">
+    body {
+        background-color: lightgrey;
+    }
+
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 800px;
+        max-width: 100%;
+        height: 500px;
+        max-height: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-left {
+        justify-content: space-between;
+        width: 25%;
+    }
+
+    .container-mid {
+        /*justify-content: space-between;*/
+        width: 50%;
+    }
+
+    .container-right {
+        justify-content: space-between;
+        width: 25%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .btn {
+        width: 20px;
+        height: 20px;
+        padding-right: 10px;
+    }
+
+    .google {
+        padding: 10px 10px;
+        display: flex;
+        background-color: #fff;
+        border: 1px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .facebook {
+        padding: 10px 10px;
+        display: flex;
+        background-color: #fff;
+        border: 1px solid grey;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .top-text {
+        margin-top: 15%;
+    }
+
+    .btn-text {
+        font-size: 1.2em;
+    }
+
+    .btn-div {
+        margin-left: 20%;
+    }
+
+    .div-text-bottom{
+    	bottom: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="modal" id="modal">
+        <div class="container-left">
+            <img src="https://miro.medium.com/max/428/1*MQH4A5bsyRz4AWh5V4IfvQ.png">
+        </div>
+        <div class="container-mid">
+            <div class="top-text centered">
+                <h1>Extend your stay.</h1>
+            </div>
+            <div class="div-text-p centered">
+                <p>Sign up for a free Medium account, and you'll get one more story in your member preview this month.</p>
+            </div>
+            <div class="btn-div">
+                <button class="loginBtn google">
+                    <img src="https://img.icons8.com/color/48/000000/google-logo.png" class="btn"><span class="btn-text">Signup with Google</span>
+                </button><br>
+                <button class="loginBtn facebook">
+                    <img src="https://img.icons8.com/color/48/000000/facebook.png" class="btn"><span class="btn-text">Signup with Facebook</span>
+                </button>
+            </div>
+            <div class="div-text-p centered">
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+            <div class="div-text-bottom centered">
+                <p>To make Medium work, we log user data and share it
+                    with service providers. Click "Sign Up above to accept
+                    Medium's Terms of Service Privacy Policy</p>
+            </div>
+        </div>
+        <div class="container-right">
+            <img src="https://miro.medium.com/max/428/1*lhbp8cxKdkDB-MgmwIPE5w.png">
+        </div>
+    </div>
+</body>
+
+</html>
